@@ -1,0 +1,24 @@
+/* Centraliza o h1 horizontalmente */
+.title-center {
+  margin-top: 10em;
+  text-align: center;
+}
+
+/* Estiliza o h1 como desejado */
+.title-center h1 {
+  font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #333; /* Defina a cor desejada */
+}
+
+/* Fixa o footer na parte inferior da página */
+#rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff; /* Cor de fundo desejada para o footer */
+  color: #000; /* Cor do texto desejada para o footer */
+  padding: 10px; /* Espaçamento interno do footer */
+}

@@ -1,0 +1,71 @@
+/* Estilos para a div que envolve o formulário */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para a imagem ilustrativa */
+.illustration {
+  padding: 20px;
+}
+
+/* Estilos para a div que envolve o formulário */
+.form-container {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+/* Estilos para o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 2em;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .illustration,
+  .form-container {
+    flex: 1;
+    width: 100%;
+    margin: 10px;
+  }
+}

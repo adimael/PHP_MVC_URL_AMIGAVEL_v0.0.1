@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Exclua a reescrita para arquivos existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Exclua a reescrita para arquivos CSS e JS
+RewriteCond %{REQUEST_URI} !^/public/assets/(css|js|png|jpg)/
+
+RewriteRule . /index.php [L]
+</IfModule>
